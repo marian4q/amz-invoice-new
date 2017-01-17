@@ -28,33 +28,53 @@ var SRC_DIR = path.resolve(__dirname, "src");
 //     }
 // };
 
-var config = {
-  devtool: debug ? "inline-sourcemap" : null,
-  entry: __dirname + "/src/app/index.js",
+// var config = {
+//   devtool: debug ? "inline-sourcemap" : null,
+//   entry: __dirname + "/src/app/index.js",
+//
+//   output: {
+//     filename: "index-min.js",
+//     path: __dirname + "/dist/app/",
+//     publicPath: '/dist/app/'
+//   },
+//   module: {
+//   loaders:[
+//       {
+//           test: /\.js$/,
+//           include: SRC_DIR,
+//           loader: "babel-loader",
+//           query: {
+//               presets: ["react", "es2015", "stage-2"]
+//           }
+//       }
+//     ],
+//   },
+//   watch: true,
+//   plugins: debug ? [] : [
+//     new webpack.optimize.DebupePlugin(),
+//     new webpack.optimize.OccurenceOrderPlugin(),
+//     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false}),
+//   ]
+// }
 
-  output: {
-    filename: "index-min.js",
-    path: __dirname + "/dist/app/",
-    publicPath: '/dist/app/'
-  },
-  module: {
-  loaders:[
-      {
-          test: /\.js$/,
-          include: SRC_DIR,
-          loader: "babel-loader",
-          query: {
-              presets: ["react", "es2015", "stage-2"]
-          }
-      }
-    ],
-  },
-  watch: true,
-  plugins: debug ? [] : [
-    new webpack.optimize.DebupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false}),
-  ]
+var config = {
+  entry: './src/app/index.js',
+ output: {
+   path: './dist',
+   filename: 'bundle.js' 
+ },
+ module: {
+   loaders: [
+     {
+       test: /\.js$/,
+       exclude: /node_modules/,
+       loader: 'babel-loader'
+     }
+   ]
+ },
+ resolve: {
+   extensions: ['', '.js', '.json']
+ }
 }
 
 module.exports = config;

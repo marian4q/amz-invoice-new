@@ -9,7 +9,7 @@ var Layout = React.createClass({
   render : function () {
     return (
       <div>
-        Wortdsssddaa
+        Component 1
       </div>
     );
   }
