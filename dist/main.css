@@ -1,0 +1,102 @@
+.displayAddressDiv .displayAddressUL {
+  list-style-type: none;
+  padding: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: left;
+  vertical-align:top;
+}
+.displayAddressDiv .displayAddressLI {
+ width: 100%;
+}
+.displayAddressDiv {
+  vertical-align: top;
+  padding-bottom: 0.5em;
+}
+.displayAddressDiv h2 {
+  font-size: 1em;
+  display: inline;
+}
+#chooseAddressDiv table {
+  width: 100%;
+}
+#chooseAddressDiv td {
+  vertical-align: top;
+}
+.enterAddressFieldLabel {
+  text-align: right;
+}
+.enterAddressFormTable td {
+    padding: 2px;
+}
+#enterAddressFormDiv input {
+  text-align: left;
+}
+#enterAddressFormDiv select {
+  text-align: left;
+  overflow: auto;
+}
+div#enterAddressFormDiv {
+  text-align: left;
+}
+.enterAddressFieldError {
+  display: block;
+  text-align: left;
+  font-size: .8em;
+  color: red;
+  clear: both;
+}
+#enterAddressFormDiv .enterAddressFieldSeparatorDiv {
+  clear: both;
+}
+.enterAddressFormInputError {
+  background-color: #FFE4B5;
+}
+#chooseAddressDiv .chooseAddressEditThisAddressButton {
+  margin : 0em .5em;
+}
+#chooseAddressDiv .chooseAddressDeleteThisAddressButton {
+  margin : 0em .5em;
+}
+#chooseAddressDiv .chooseAddressChooseThisAddressRadioButton {
+  vertical-align: -4em;
+}
+#chooseAddressDiv .chooseAddressChooseThisAddressRadioButtonDiv {
+  float : left;
+  height: 100%;
+}
+#chooseAddressDiv td {
+ width: 33%;
+}
+#chooseAddressDiv .chooseAddressSeparator {
+  margin-top : 1em;
+}
+#deleteAddressDiv {
+  color: #a00000;
+  padding-left: 3em;
+}
+.enterDeliveryPrefsLabel {
+  text-align: right;
+  vertical-align: middle;
+}
+#deliveryPreferences {
+ color: #E47911;
+ text-decoration: none;
+}
+#learnMoreLink a {
+ color: #004B91;
+ text-decoration: none;
+}
+#learnMoreLink a:hover, #learnMoreLink a:active, #learnMoreLink a:hover span, #learnMoreLink a:active span {
+ color: #E47911;
+ text-decoration: underline;
+}
+#whatsThisLink a {
+ color: #004B91;
+ text-decoration: none;
+}
+#whatsThisLink a:hover, #whatsThisLink a:active, #whatsThisLink a:hover span, #whatsThisLink a:active span {
+ color: #E47911;
+ text-decoration: underline;
+}

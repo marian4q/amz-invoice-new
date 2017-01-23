@@ -51,6 +51,7 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
 	var _ = __webpack_require__(178);
+	var Container = __webpack_require__(180);
 
 	var Layout = React.createClass({
 	  displayName: 'Layout',
@@ -59,7 +60,8 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      'Component 1'
+	      'Component 1',
+	      React.createElement(Container, null)
 	    );
 	  }
 
@@ -38544,6 +38546,862 @@
 		return module;
 	}
 
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(32);
+	var _ = __webpack_require__(178);
+
+	var Container = React.createClass({
+	  displayName: 'Container',
+
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement('img', { src: './img/amazon-logo-tiny._V192256679_.gif', width: '113', align: 'left', height: '23', border: '0' }),
+	      React.createElement('br', null),
+	      React.createElement('br', null),
+	      React.createElement(
+	        'div',
+	        { className: 'center-txt' },
+	        React.createElement(
+	          'b',
+	          { className: 'h1' },
+	          'Final Details for Order ',
+	          React.createElement(
+	            'span',
+	            { className: 'order-num' },
+	            '#107-9298298-2630658'
+	          )
+	        ),
+	        React.createElement('br', null)
+	      ),
+	      React.createElement('br', null),
+	      React.createElement(
+	        'table',
+	        { width: '90%', border: '0', cellspacing: '0', cellpadding: '0', bgcolor: '#ffffff', align: 'center' },
+	        React.createElement(
+	          'tbody',
+	          null,
+	          React.createElement(
+	            'tr',
+	            null,
+	            React.createElement(
+	              'td',
+	              null,
+	              React.createElement(
+	                'table',
+	                { width: '100%', border: '0', align: 'center', cellpadding: '0', cellspacing: '0' },
+	                React.createElement(
+	                  'tbody',
+	                  null,
+	                  React.createElement(
+	                    'tr',
+	                    null,
+	                    React.createElement(
+	                      'td',
+	                      { valign: 'top', align: 'left' },
+	                      React.createElement(
+	                        'b',
+	                        null,
+	                        'Order Placed:'
+	                      ),
+	                      React.createElement(
+	                        'span',
+	                        { className: 'inv-date' },
+	                        ' January 12, 2015 '
+	                      )
+	                    )
+	                  ),
+	                  React.createElement(
+	                    'tr',
+	                    null,
+	                    React.createElement(
+	                      'td',
+	                      { valign: 'top', align: 'left' },
+	                      React.createElement(
+	                        'b',
+	                        null,
+	                        'Amazon.com order number:'
+	                      ),
+	                      '107-9298298-2630658'
+	                    )
+	                  ),
+	                  React.createElement(
+	                    'tr',
+	                    null,
+	                    React.createElement(
+	                      'td',
+	                      { valign: 'top', align: 'left' },
+	                      React.createElement(
+	                        'b',
+	                        null,
+	                        'Order Total:',
+	                        React.createElement(
+	                          'span',
+	                          { className: 'total-price' },
+	                          ' $84.04'
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              ),
+	              React.createElement('br', null),
+	              React.createElement(
+	                'table',
+	                { width: '100%', border: '0', cellspacing: '0', cellpadding: '0', bgcolor: '#000000', align: 'center' },
+	                React.createElement(
+	                  'tbody',
+	                  null,
+	                  React.createElement(
+	                    'tr',
+	                    { bgcolor: '#000000' },
+	                    React.createElement(
+	                      'td',
+	                      null,
+	                      React.createElement(
+	                        'table',
+	                        { width: '100%', border: '0', cellspacing: '3', cellpadding: '0', align: 'center', bgcolor: '#000000' },
+	                        React.createElement(
+	                          'tbody',
+	                          null,
+	                          React.createElement(
+	                            'tr',
+	                            { bgcolor: '#ffffff' },
+	                            React.createElement(
+	                              'td',
+	                              { valign: 'top', colspan: '2' },
+	                              React.createElement(
+	                                'table',
+	                                { width: '100%', border: '0', cellspacing: '0', cellpadding: '5' },
+	                                React.createElement(
+	                                  'tbody',
+	                                  null,
+	                                  React.createElement(
+	                                    'tr',
+	                                    { bgcolor: '#ffffff' },
+	                                    React.createElement(
+	                                      'td',
+	                                      null,
+	                                      React.createElement(
+	                                        'b',
+	                                        { className: 'sans' },
+	                                        React.createElement(
+	                                          'div',
+	                                          { className: 'center-txt' },
+	                                          'Shipped on  ',
+	                                          React.createElement(
+	                                            'span',
+	                                            { className: 'inv-shipped' },
+	                                            'January 13, 2015 '
+	                                          )
+	                                        )
+	                                      )
+	                                    )
+	                                  )
+	                                )
+	                              )
+	                            )
+	                          ),
+	                          React.createElement(
+	                            'tr',
+	                            null,
+	                            React.createElement(
+	                              'td',
+	                              { bgcolor: '#ffffff', valign: 'top', colspan: '2' },
+	                              React.createElement(
+	                                'table',
+	                                { width: '100%', border: '0', cellspacing: '0', cellpadding: '2' },
+	                                React.createElement(
+	                                  'tbody',
+	                                  null,
+	                                  React.createElement(
+	                                    'tr',
+	                                    { valign: 'top' },
+	                                    React.createElement(
+	                                      'td',
+	                                      { width: '100%' },
+	                                      React.createElement(
+	                                        'table',
+	                                        { border: '0', cellspacing: '0', cellpadding: '2', align: 'right' },
+	                                        React.createElement(
+	                                          'tbody',
+	                                          null,
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { align: 'right' },
+	                                              '\xA0'
+	                                            )
+	                                          )
+	                                        )
+	                                      ),
+	                                      React.createElement(
+	                                        'table',
+	                                        { id: 'table-items-body', border: '0', cellspacing: '2', cellpadding: '0', width: '100%' },
+	                                        React.createElement(
+	                                          'tbody',
+	                                          null,
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { valign: 'top' },
+	                                              React.createElement(
+	                                                'b',
+	                                                null,
+	                                                'Items Ordered'
+	                                              )
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { align: 'right', valign: 'top' },
+	                                              React.createElement(
+	                                                'b',
+	                                                null,
+	                                                'Price'
+	                                              )
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            null,
+	                                            React.createElement('input', { type: 'hidden', name: 'kmnmpriltkpppw', value: '1' }),
+	                                            React.createElement(
+	                                              'td',
+	                                              { colspan: '1', valign: 'top' },
+	                                              '1 of:',
+	                                              React.createElement(
+	                                                'i',
+	                                                { className: 'item one' },
+	                                                'Samsung S Mouse for Tablets (ET-MP900DBEGUJ) for Galaxy Note Pro & Tab Pro'
+	                                              ),
+	                                              React.createElement('br', null),
+	                                              React.createElement(
+	                                                'span',
+	                                                { className: 'tiny' },
+	                                                'Sold by: Amazon.com LLC',
+	                                                React.createElement('br', null),
+	                                                React.createElement('br', null),
+	                                                'Condition: New',
+	                                                React.createElement('br', null)
+	                                              )
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { align: 'right', valign: 'top', colspan: '2', className: 'item-price one' },
+	                                              '$27.99',
+	                                              React.createElement('br', null)
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            null,
+	                                            React.createElement('input', { type: 'hidden', name: 'kmnmpriltkptpw', value: '1' }),
+	                                            React.createElement(
+	                                              'td',
+	                                              { colspan: '1', valign: 'top' },
+	                                              '1 of:',
+	                                              React.createElement(
+	                                                'i',
+	                                                { className: 'item two' },
+	                                                'Microsoft Xbox One Controller + Cable for Windows'
+	                                              ),
+	                                              React.createElement('br', null),
+	                                              React.createElement(
+	                                                'span',
+	                                                { className: 'tiny' },
+	                                                'Sold by: Amazon.com LLC',
+	                                                React.createElement('br', null),
+	                                                React.createElement('br', null),
+	                                                'Condition: New',
+	                                                React.createElement('br', null)
+	                                              )
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { align: 'right', valign: 'top', colspan: '2', className: 'item-price two' },
+	                                              '$56.05',
+	                                              React.createElement('br', null)
+	                                            )
+	                                          )
+	                                        )
+	                                      ),
+	                                      React.createElement('br', null)
+	                                    )
+	                                  )
+	                                )
+	                              )
+	                            )
+	                          ),
+	                          React.createElement(
+	                            'tr',
+	                            null,
+	                            React.createElement(
+	                              'td',
+	                              { bgcolor: '#ffffff', valign: 'top', colspan: '2' },
+	                              React.createElement(
+	                                'table',
+	                                { width: '100%', border: '0', cellspacing: '0', cellpadding: '2' },
+	                                React.createElement(
+	                                  'tbody',
+	                                  null,
+	                                  React.createElement(
+	                                    'tr',
+	                                    null,
+	                                    React.createElement(
+	                                      'td',
+	                                      null,
+	                                      React.createElement(
+	                                        'b',
+	                                        null,
+	                                        'Shipping Address:'
+	                                      ),
+	                                      React.createElement('br', null),
+	                                      React.createElement(
+	                                        'div',
+	                                        { className: 'displayAddressDiv' },
+	                                        React.createElement(
+	                                          'ul',
+	                                          { className: 'displayAddressUL' },
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressFullName' },
+	                                            'Nicolas Moccagatta'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressAddressLine1' },
+	                                            '555 W MADISON ST'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressAddressLine2' },
+	                                            'Floor 22, Room# 2210,  Presidential towers Tower 4,'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressCityStateOrRegionPostalCode' },
+	                                            'CHICAGO, IL 60661-2500'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressCountryName' },
+	                                            'United States'
+	                                          )
+	                                        )
+	                                      ),
+	                                      React.createElement('br', null),
+	                                      React.createElement(
+	                                        'b',
+	                                        null,
+	                                        'Shipping Speed:'
+	                                      ),
+	                                      React.createElement('br', null),
+	                                      'FREE Shipping',
+	                                      React.createElement('br', null)
+	                                    ),
+	                                    React.createElement(
+	                                      'td',
+	                                      { align: 'right' },
+	                                      React.createElement(
+	                                        'table',
+	                                        { border: '0', cellpadding: '0', cellspacing: '1' },
+	                                        React.createElement(
+	                                          'tbody',
+	                                          null,
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              'Item(s) Subtotal: '
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right', className: 'total-price' },
+	                                              '$84.04'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              'Shipping & Handling:'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '$8.87'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              'Free shipping:'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '-$8.87'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '\xA0'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '-----'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              'Total before tax:'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right', className: 'total-price' },
+	                                              '$84.04'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              'Sales Tax:'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '$0.00'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '\xA0'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '-----'
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              React.createElement(
+	                                                'b',
+	                                                null,
+	                                                'Total for This Shipment:'
+	                                              )
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              React.createElement(
+	                                                'b',
+	                                                { className: 'total-price' },
+	                                                '$84.04'
+	                                              )
+	                                            )
+	                                          ),
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '\xA0'
+	                                            ),
+	                                            React.createElement(
+	                                              'td',
+	                                              { nowrap: 'nowrap', align: 'right' },
+	                                              '-----'
+	                                            )
+	                                          )
+	                                        )
+	                                      )
+	                                    )
+	                                  )
+	                                )
+	                              )
+	                            )
+	                          )
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              ),
+	              React.createElement('br', null),
+	              React.createElement(
+	                'table',
+	                { width: '100%', border: '0', cellspacing: '0', cellpadding: '0', bgcolor: '#000000', align: 'center' },
+	                React.createElement(
+	                  'tbody',
+	                  null,
+	                  React.createElement(
+	                    'tr',
+	                    { bgcolor: '#000000' },
+	                    React.createElement(
+	                      'td',
+	                      null,
+	                      React.createElement(
+	                        'table',
+	                        { width: '100%', border: '0', cellspacing: '3', cellpadding: '0', align: 'center', bgcolor: '#000000' },
+	                        React.createElement(
+	                          'tbody',
+	                          null,
+	                          React.createElement(
+	                            'tr',
+	                            { bgcolor: '#ffffff' },
+	                            React.createElement(
+	                              'td',
+	                              { valign: 'top', colspan: '2' },
+	                              React.createElement(
+	                                'table',
+	                                { width: '100%', border: '0', cellspacing: '0', cellpadding: '5' },
+	                                React.createElement(
+	                                  'tbody',
+	                                  null,
+	                                  React.createElement(
+	                                    'tr',
+	                                    { bgcolor: '#ffffff' },
+	                                    React.createElement(
+	                                      'td',
+	                                      null,
+	                                      React.createElement(
+	                                        'b',
+	                                        { className: 'sans' },
+	                                        React.createElement(
+	                                          'div',
+	                                          { className: 'center-txt' },
+	                                          'Payment information'
+	                                        )
+	                                      )
+	                                    )
+	                                  )
+	                                )
+	                              )
+	                            )
+	                          ),
+	                          React.createElement(
+	                            'tr',
+	                            null,
+	                            React.createElement(
+	                              'td',
+	                              { bgcolor: '#ffffff', valign: 'top', colspan: '2' },
+	                              React.createElement(
+	                                'table',
+	                                { width: '100%', border: '0', cellspacing: '0', cellpadding: '2' },
+	                                React.createElement(
+	                                  'tbody',
+	                                  null,
+	                                  React.createElement(
+	                                    'tr',
+	                                    { valign: 'top' },
+	                                    React.createElement(
+	                                      'td',
+	                                      { width: '100%' },
+	                                      React.createElement(
+	                                        'table',
+	                                        { border: '0', cellspacing: '0', cellpadding: '2', align: 'right' },
+	                                        React.createElement(
+	                                          'tbody',
+	                                          null,
+	                                          React.createElement(
+	                                            'tr',
+	                                            { valign: 'top' },
+	                                            React.createElement(
+	                                              'td',
+	                                              { align: 'right' },
+	                                              React.createElement(
+	                                                'table',
+	                                                { border: '0', cellpadding: '0', cellspacing: '1' },
+	                                                React.createElement(
+	                                                  'tbody',
+	                                                  null,
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      'Item(s) Subtotal: '
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right', className: 'total-price' },
+	                                                      '$84.04'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      'Shipping & Handling:'
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '$8.87'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      'Free shipping:'
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '-$8.87'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '\xA0'
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '-----'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      'Total before tax:'
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right', className: 'total-price' },
+	                                                      '$84.04'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      'Estimated tax to be collected:'
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '$0.00'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '\xA0'
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      '-----'
+	                                                    )
+	                                                  ),
+	                                                  React.createElement(
+	                                                    'tr',
+	                                                    { valign: 'top' },
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      React.createElement(
+	                                                        'b',
+	                                                        null,
+	                                                        'Grand Total:'
+	                                                      )
+	                                                    ),
+	                                                    React.createElement(
+	                                                      'td',
+	                                                      { nowrap: 'nowrap', align: 'right' },
+	                                                      React.createElement(
+	                                                        'b',
+	                                                        { className: 'total-price' },
+	                                                        '$84.04'
+	                                                      )
+	                                                    )
+	                                                  )
+	                                                )
+	                                              )
+	                                            )
+	                                          )
+	                                        )
+	                                      ),
+	                                      React.createElement(
+	                                        'b',
+	                                        null,
+	                                        'Payment Method: '
+	                                      ),
+	                                      React.createElement('br', null),
+	                                      'Visa',
+	                                      React.createElement(
+	                                        'nobr',
+	                                        null,
+	                                        ' | Last digits:  1327'
+	                                      ),
+	                                      React.createElement('br', null),
+	                                      React.createElement('br', null),
+	                                      React.createElement(
+	                                        'b',
+	                                        null,
+	                                        'Billing address'
+	                                      ),
+	                                      React.createElement(
+	                                        'div',
+	                                        { className: 'displayAddressDiv' },
+	                                        React.createElement(
+	                                          'ul',
+	                                          { className: 'displayAddressUL' },
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressFullName' },
+	                                            'Nicolas Moccagatta'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressAddressLine1' },
+	                                            '555 W MADISON ST'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressAddressLine2' },
+	                                            'Floor 22, Room# 2210,  Presidential towers Tower 4,'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressCityStateOrRegionPostalCode' },
+	                                            'CHICAGO, IL 60661-2500'
+	                                          ),
+	                                          React.createElement(
+	                                            'li',
+	                                            { className: 'displayAddressLI displayAddressCountryName' },
+	                                            'United States'
+	                                          )
+	                                        )
+	                                      )
+	                                    )
+	                                  )
+	                                )
+	                              )
+	                            )
+	                          )
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      React.createElement(
+	        'div',
+	        { className: 'center-txt' },
+	        React.createElement(
+	          'p',
+	          null,
+	          'To view the status of your order, return to ',
+	          React.createElement(
+	            'a',
+	            { href: 'https://www.amazon.com/gp/css/summary/edit.html?ie=UTF8&orderID=107-9298298-2630658' },
+	            'Order Summary'
+	          ),
+	          '.'
+	        )
+	      ),
+	      React.createElement('br', null),
+	      React.createElement(
+	        'div',
+	        { className: 'tiny' },
+	        React.createElement(
+	          'a',
+	          { href: 'http://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=508088', rel: 'nofollow' },
+	          'Conditions of Use'
+	        ),
+	        '|',
+	        React.createElement(
+	          'a',
+	          { href: 'http://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496', rel: 'nofollow' },
+	          'Privacy Notice'
+	        ),
+	        '\xA9 1996-2015, Amazon.com, Inc. or its affiliates'
+	      ),
+	      React.createElement(
+	        'div',
+	        { id: 'be', style: 'display:none;visibility:hidden;' },
+	        React.createElement(
+	          'form',
+	          { name: 'ue_backdetect' },
+	          React.createElement('input', { name: 'ue_back', value: '2', type: 'hidden' })
+	        ),
+	        React.createElement(
+	          'a',
+	          { href: 'https://www.amazon.com/gp/uedata/nvp/unsticky/175-7679406-8529129//ntpoffrw?tepes=1&id=00MHDNKWSPE1J388MFXB' },
+	          'v'
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Container;
 
 /***/ }
 /******/ ]);
