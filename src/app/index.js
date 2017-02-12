@@ -1,4 +1,4 @@
-console.log("lala2sds3");
+console.log("lala2sds333");
 
 var React = require('react');
 var ReactDOM = require('react-dom')
@@ -13,7 +13,6 @@ var Layout = React.createClass({
         Component 1
         <Container />
       </div>
-
     );
   }
 

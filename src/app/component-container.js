@@ -8,8 +8,8 @@ var Container = React.createClass({
     return (
       <div>
 
-                <img src="./img/amazon-logo-tiny._V192256679_.gif" width="113" align="left" height="23" border="0" />
-                <br />
+        <img src="./img/amazon-logo-tiny._V192256679_.gif" width="113" align="left" height="23" border="0" />
+        <br />
 
                 <br />
                 <div className="center-txt"><b className="h1">
@@ -376,10 +376,6 @@ var Container = React.createClass({
                 © 1996-2015, Amazon.com, Inc. or its affiliates
                 </div>
 
-                <div id="be" style="display:none;visibility:hidden;"><form name="ue_backdetect"><input name="ue_back" value="2" type="hidden" /></form>
-                <a href="https://www.amazon.com/gp/uedata/nvp/unsticky/175-7679406-8529129//ntpoffrw?tepes=1&id=00MHDNKWSPE1J388MFXB">v</a>
-
-                </div>
       </div>
     );
   }

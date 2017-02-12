@@ -46,7 +46,7 @@
 
 	'use strict';
 
-	console.log("lala2sds3");
+	console.log("lala2sds333");
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
@@ -39381,20 +39381,6 @@
 	          'Privacy Notice'
 	        ),
 	        '\xA9 1996-2015, Amazon.com, Inc. or its affiliates'
-	      ),
-	      React.createElement(
-	        'div',
-	        { id: 'be', style: 'display:none;visibility:hidden;' },
-	        React.createElement(
-	          'form',
-	          { name: 'ue_backdetect' },
-	          React.createElement('input', { name: 'ue_back', value: '2', type: 'hidden' })
-	        ),
-	        React.createElement(
-	          'a',
-	          { href: 'https://www.amazon.com/gp/uedata/nvp/unsticky/175-7679406-8529129//ntpoffrw?tepes=1&id=00MHDNKWSPE1J388MFXB' },
-	          'v'
-	        )
 	      )
 	    );
 	  }
